@@ -1,3 +1,10 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+/* At medium screen news-input will be half a size */
+@media(min-width:768px) {
+    .email-input {
+        width: 50%;
+    }
+}
