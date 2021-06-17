@@ -22,3 +22,7 @@ body::before{
         width: 50%;
     }
 }
+
+form span{
+    color: red;
+}

@@ -62,7 +62,7 @@
                     <!-- Margin top and bottom with "my-4" -->
                     <p class="lead my-4">We aim to offer the value at 100X lower price. We also substitute the classroom teaching experience with interactive screencast, live events, and peer-to-peer help between students.</p>
                     
-                    <button class="btn btn-outline-primary btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#enroll">Enroll Now</button>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Enroll Now</button>
                 </div>
 
                 <!-- If image is bigger then "w-50" makes it half the size -->
@@ -310,6 +310,47 @@
         </a>
     </Footer>
     
+
+    <!-- Modal for Enrollment -->
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enrollment Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name <span>*</span></label>
+                        <input type="text" class="form-control" id="fullname" >  
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address <span>*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="modal-footer align-items-center justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <script>
